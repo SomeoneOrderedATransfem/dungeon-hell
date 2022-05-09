@@ -1,0 +1,40 @@
+.navBar {
+    border-bottom: 1px solid #e5e5e5;
+    color: white;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: min-content;
+    padding: 0.5rem 0;
+    #left {
+        align-self: left;
+        align-items: center;
+        padding: 5px;
+        #logoContainer {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: min-content;
+            margin-right: 1rem;
+            align-items: center;
+            justify-content: left;
+            #logo {
+                max-width: 5.5rem;
+                background-color: #fff;
+                margin-right: 1rem;
+            }
+        }
+    }
+    #right {
+        align-self: right;
+    }
+    .navItem {
+        padding: 2rem;
+        border-style: solid;
+        border-color: #fff;
+        border-radius: 0.5rem;
+        &:hover {
+            background-color: rgb(49, 49, 49);
+            transition: all 0.2s ease-in-out;
+            border-color: #fff;
+        }
+    }
+}
